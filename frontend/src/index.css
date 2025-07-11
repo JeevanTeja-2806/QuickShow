@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Outfit:wght@100..900&family=Prata&display=swap');
+
+@import "tailwindcss";
+
+.no-scrollbar{
+  scrollbar-width: none;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #787777 #1e1e1e;
+}
+
+body{
+  color:white;
+  background-color: #09090B;
+}
+
+/* Calendar icon inside datetime-local */
+input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* Number input spinner arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
