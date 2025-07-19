@@ -69,7 +69,7 @@ const releaseSeatsAndDeleteBooking = inngest.createFunction(
                 })
                 show.markModified('occupiedSeats')
                 await show.save()
-                await booking.findByIdAndDelete(booking._id)
+                await Booking.findByIdAndDelete(booking._id)
             }
         })
     }
